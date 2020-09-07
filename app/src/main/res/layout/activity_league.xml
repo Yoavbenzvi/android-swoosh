@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LeagueActivity">
+    tools:context=".Controller.LeagueActivity">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -76,13 +76,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <ToggleButton
-            android:id="@+id/toggleButton"
+            android:id="@+id/mensLeagueButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:background="@drawable/swoosh_toggle"
             android:fontFamily="@font/montserrat"
+            android:onClick="onMensClick"
             android:text="@string/mens"
             android:textColor="#FFFFFF"
             android:textOff="@string/mens"
@@ -90,7 +91,7 @@
             tools:text="@string/mens" />
 
         <ToggleButton
-            android:id="@+id/toggleButton2"
+            android:id="@+id/womensLeagueButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -99,19 +100,21 @@
             android:layout_marginBottom="16dp"
             android:background="@drawable/swoosh_toggle"
             android:fontFamily="@font/montserrat"
+            android:onClick="onWomensClick"
             android:text="@string/women"
             android:textColor="#FFFFFF"
             android:textOff="@string/women"
             android:textOn="@string/women" />
 
         <ToggleButton
-            android:id="@+id/toggleButton3"
+            android:id="@+id/coedLeagueButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:background="@drawable/swoosh_toggle"
             android:fontFamily="@font/montserrat"
+            android:onClick="onCoedClick"
             android:text="@string/co_ed"
             android:textColor="#FFFFFF"
             android:textOff="@string/co_ed"
